@@ -1,23 +1,16 @@
 #include <stdio.h>
 /**
- * main - Entry point
+ * main - print the size of variable type based on the computer it is compiled.
  *
  * Return: 0
 */
 
 int main(void)
-
 {
-	char a;
-	int b;
-	long int c;
-	long long int d;
-	float f;
-
-	printf("size of a char: %ln byte(s)\n", (unsigned long)sizeof(a));
-	printf("size of a int: %ln byte(s)\n", (unsigned long)sizeof(b);
-	printf("size of a long int: %ln byte(s)\n", (unsigned long)sizeof(c));
-	printf("size of a long long int: %ln byte(s)n\n", (unsigned long)sizeof(d));
-	printf("size of a float: %ln byte(s)n\n", (unsigned long)sizeof(f));
+	printf("size of a char: %zu byte(s)\n", sizeof(char));
+	printf("size of a int: %zu byte(s)\n", sizeof(int);
+	printf("size of a long int: %zu byte(s)\n", sizeof(long int));
+	printf("size of a long long int: %zu byte(s)n\n", sizeof(long long int));
+	printf("size of a float: %zu byte(s)n\n", sizeof(float));
 	return (0);
 }
